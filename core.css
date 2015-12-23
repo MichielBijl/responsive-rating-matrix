@@ -1,0 +1,121 @@
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p[id^="legend-"] {
+  float: left;
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+ol {
+  clear: left;
+  padding: 0;
+  list-style: none;
+}
+
+ul {
+  display: none;
+}
+
+[type="radio"] {
+  margin-right: 1em;
+}
+
+@media (max-width: 40em) {
+  fieldset + fieldset {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #333;
+  }
+}
+
+@media (min-width: 40em) {
+  fieldset {
+    padding: 10px;
+  }
+
+  fieldset:nth-child(even) {
+    background: hsla(0, 0%, 70%, 0.3);
+  }
+
+  p[id^="legend-"] {
+    margin: 0;
+    width: 12em;
+  }
+
+  ol {
+    float: left;
+    clear: none;
+    margin: 0 0 0 1em;
+    /* Width of legend + margin of ol */
+    width: calc(100% - 13em);
+  }
+
+  ol::after,
+  ul::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+
+  ul {
+    display: block;
+    /* Width of legend + margin of ol */
+    margin-left: 13em;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    float: left;
+    width: calc(100% / 6);
+    text-align: center;
+  }
+
+  label {
+    position: relative;
+  }
+
+  span {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+}
+
+@supports (display: flex) {
+  @media (min-width: 40em) {
+    fieldset {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    p[id^="legend-"],
+    li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    div {
+      display: flex;
+      align-items: stretch;
+    }
+
+    ol {
+      display: flex;
+    }
+
+    ul {
+      margin-bottom: 0;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    li:nth-child(even) {
+      background: hsla(0, 0%, 70%, 0.3);
+    }
+  }
+}

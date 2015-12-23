@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Responsive Rating Matrix</title>
+    <link rel="stylesheet" href="core.css">
+  </head>
+  <body>
+    <h1>Question 5</h1>
+    <p>Please rate how you experience our service in regards to:</p>
+    <form action="">
+      <!-- fieldset>(legend>lorem5)+ol>li*6>label>input[type="radio" name="question-$"]+lorem2 -->
+      <!-- NOTE: This has aria-hidden because they're useless out of context. All radio inputs have labels. -->
+      <ul aria-hidden="true">
+        <li>Very crappy</li>
+        <li>Crappy</li>
+        <li>Neutral</li>
+        <li>Happy</li>
+        <li>Very happy</li>
+        <li>Don't know</li>
+      </ul>
+      <fieldset aria-labelledby="legend-1">
+        <div>
+          <p id="legend-1">Accessibility</p>
+          <ol>
+            <li><label><input type="radio" name="question-1"><span>Very crappy</span></label></li>
+            <li><label><input type="radio" name="question-1"><span>Crappy</span></label></li>
+            <li><label><input type="radio" name="question-1"><span>Neutral</span></label></li>
+            <li><label><input type="radio" name="question-1"><span>Happy</span></label></li>
+            <li><label><input type="radio" name="question-1"><span>Very happy</span></label></li>
+            <li><label><input type="radio" name="question-1"><span>Don't know</span></label></li>
+          </ol>
+        </div>
+      </fieldset>
+      <fieldset aria-labelledby="legend-2">
+        <div>
+          <p id="legend-2">Amount of cats</p>
+          <ol>
+            <li><label><input type="radio" name="question-2"><span>Very crappy</span></label></li>
+            <li><label><input type="radio" name="question-2"><span>Crappy</span></label></li>
+            <li><label><input type="radio" name="question-2"><span>Neutral</span></label></li>
+            <li><label><input type="radio" name="question-2"><span>Happy</span></label></li>
+            <li><label><input type="radio" name="question-2"><span>Very happy</span></label></li>
+            <li><label><input type="radio" name="question-2"><span>Don't know</span></label></li>
+          </ol>
+        </div>
+      </fieldset>
+      <fieldset aria-labelledby="legend-3">
+        <div>
+          <p id="legend-3">Amount of Dutchies</p>
+          <ol>
+            <li><label><input type="radio" name="question-3"><span>Very crappy</span></label></li>
+            <li><label><input type="radio" name="question-3"><span>Crappy</span></label></li>
+            <li><label><input type="radio" name="question-3"><span>Neutral</span></label></li>
+            <li><label><input type="radio" name="question-3"><span>Happy</span></label></li>
+            <li><label><input type="radio" name="question-3"><span>Very happy</span></label></li>
+            <li><label><input type="radio" name="question-3"><span>Don't know</span></label></li>
+          </ol>
+        </div>
+      </fieldset>
+      <fieldset aria-labelledby="legend-4">
+        <div>
+          <p id="legend-4">Amount of surveys</p>
+          <ol>
+            <li><label><input type="radio" name="question-4"><span>Very crappy</span></label></li>
+            <li><label><input type="radio" name="question-4"><span>Crappy</span></label></li>
+            <li><label><input type="radio" name="question-4"><span>Neutral</span></label></li>
+            <li><label><input type="radio" name="question-4"><span>Happy</span></label></li>
+            <li><label><input type="radio" name="question-4"><span>Very happy</span></label></li>
+            <li><label><input type="radio" name="question-4"><span>Don't know</span></label></li>
+          </ol>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
