@@ -26,14 +26,14 @@
   function turnIntoTable (){
     setRole(rows, '');
     setRole(rowHeadings, '');
-    setAria(rowHeadings, 'level', '');
+    setAria(rowHeadings, 'aria-level', '');
     setRole(cells, '');
   }
 
   function turnIntoList() {
     setRole(rows, 'group');
     setRole(rowHeadings, 'heading');
-    setAria(rowHeadings, 'level', '2');
+    setAria(rowHeadings, 'aria-level', '2');
     setRole(cells, 'presentation');
   }
 
