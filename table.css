@@ -1,0 +1,66 @@
+body {
+  font-family: "Lucida Grande", sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+th {
+  padding: 10px;
+}
+
+thead th {
+  /* Doesn't seem to work with td's */
+  width: calc((100% - 200px) / 6);
+}
+
+tbody th {
+  text-align: left;
+}
+
+tbody td {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  tbody tr:nth-child(odd),
+  thead th:nth-child(odd):not(:first-child),
+  tbody td:nth-child(odd) {
+    background: hsla(0, 0%, 70%, 0.3);
+  }
+
+  tbody th {
+    width: 200px;
+  }
+
+  span {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 100em) {
+  thead {
+    display: none;
+  }
+
+  table,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+
+  th {
+    margin: 1em 0;
+  }
+
+  tbody td {
+    text-align: left;
+  }
+}
