@@ -9,14 +9,11 @@ body {
 }
 
 p[id^="legend-"] {
-  float: left;
   margin: 0 0 1em;
-  padding: 0;
   font-weight: 700;
 }
 
 ol {
-  clear: left;
   padding: 0;
   list-style: none;
 }
@@ -48,6 +45,7 @@ ul {
   }
 
   p[id^="legend-"] {
+    float: left;
     margin: 0;
     width: 12em;
   }
