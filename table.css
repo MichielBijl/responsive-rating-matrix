@@ -43,7 +43,7 @@ tbody td {
   }
 }
 
-@media (max-width: 100em) {
+@media (max-width: 40em) {
   thead {
     display: none;
   }
